@@ -1,0 +1,112 @@
+html,body{
+	margin: 0;
+	height: 100%;
+}
+.Body{
+	background: #000;
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+}
+.HeadBox{
+	height: 94px;
+	/*padding-top: 10px;*/
+	color: #fff;
+	text-align: center;
+	line-height: 94px;
+	font-size: 30px;
+	overflow: hidden;
+	/*margin: 0 auto;*/
+}
+.ContentBox{
+	-webkit-box-flex: 1;
+}
+.sky{
+	height: 528px;
+	width: 100%;
+	background: #007fd5;
+	position: relative;
+	-webkit-animation: sky_background 50s ease-out infinite;
+	-moz-animation: sky_background 50s ease-out infinite;
+	-ms-animation: sky_background 50s ease-out infinite;
+	-o-animation: sky_background 50s ease-out infinite;
+	animation: sky_background 50s ease-out infinite;
+}
+.one{
+	background: url("img/cloud_one.png");
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 300%;
+	-webkit-animation:cloud_one 50s linear infinite;
+	-moz-animation:cloud_one 50s linear infinite;
+	-ms-animation:cloud_one 50s linear infinite;
+	-o-animation:cloud_one 50s linear infinite;
+	animation:cloud_one 50s linear infinite;
+}
+.two{
+	background: url("img/cloud_two.png");
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 300%;
+	-webkit-animation:cloud_two 70s linear infinite;
+	-moz-animation:cloud_two 70s linear infinite;
+	-ms-animation:cloud_two 70s linear infinite;
+	-o-animation:cloud_two 70s linear infinite;
+	animation:cloud_two 70s linear infinite;
+}
+.three{
+	background: url("img/cloud_three.png");
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 300%;
+	-webkit-animation:cloud_three 100s linear infinite;
+	-moz-animation:cloud_three 100s linear infinite;
+	-ms-animation:cloud_three 100s linear infinite;
+	-o-animation:cloud_three 100s linear infinite;
+	animation:cloud_three 100s linear infinite;
+
+}
+@-webkit-keyframes sky_background{
+	0%{
+		background: #007fd5;
+		color: #007fd5;
+	}
+	50%{
+		background: #000;
+		color: #a3d9ff;
+	}
+	100%{
+		background: #007fd5;
+		color: #007fd5;
+	}
+}
+@-webkit-keyframes cloud_one{
+	0%{
+		left: 0;
+	}
+	100%{
+		left: -200%;
+	}
+}
+@-webkit-keyframes cloud_two{
+	0%{
+		left: 0;
+	}
+	100%{
+		left: -200%;
+	}
+}
+@-webkit-keyframes cloud_three{
+	0%{
+		left: 0;
+	}
+	100%{
+		left: -200%;
+	}
+}
